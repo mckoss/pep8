@@ -88,28 +88,30 @@ Or you can display how often each error was found::
 Quick help is available on the command line::
 
   $ pep8 -h
-  Usage: pep8.py [options] input ...
+    Usage: pep8 [options] input ...
 
-  Options:
-    --version            show program's version number and exit
-    -h, --help           show this help message and exit
-    -v, --verbose        print status messages, or debug with -vv
-    -q, --quiet          report only file names, or nothing with -qq
-    -r, --repeat         show all occurrences of the same error
-    --exclude=patterns   exclude files or directories which match these comma
-                         separated patterns (default: .svn,CVS,.bzr,.hg,.git)
-    --filename=patterns  when parsing directories, only check filenames matching
-                         these comma separated patterns (default: *.py)
-    --select=errors      select errors and warnings (e.g. E,W6)
-    --ignore=errors      skip errors and warnings (e.g. E4,W)
-    --show-source        show source code for each error
-    --show-pep8          show text of PEP 8 for each error
-    --statistics         count errors and warnings
-    --count              print total number of errors and warnings to standard
-                         error and set exit code to 1 if total is not null
-    --benchmark          measure processing speed
-    --testsuite=dir      run regression tests from dir
-    --doctest            run doctest on myself
+    Options:
+      --version            show program's version number and exit
+      -h, --help           show this help message and exit
+      -v, --verbose        print status messages, or debug with -vv
+      -q, --quiet          report only file names, or nothing with -qq
+      -r, --repeat         show all occurrences of the same error
+      --exclude=patterns   exclude files or directories which match these comma
+                           separated patterns (default: .svn,CVS,.bzr,.hg,.git)
+      --filename=patterns  when parsing directories, only check filenames matching
+                           these comma separated patterns (default: *.py)
+      --select=errors      select errors and warnings (e.g. E,W6)
+      --ignore=errors      skip errors and warnings (e.g. E4,W)
+      --show-source        show source code for each error
+      --show-pep8          show text of PEP 8 for each error
+      --statistics         count errors and warnings
+      --count              print total number of errors and warnings to standard
+                           error and set exit code to 1 if total is not null
+      --benchmark          measure processing speed
+      --testsuite=dir      run regression tests from dir
+      --max-line-length=n  set to a higher value to relax pep8 line length
+                           restictions
+      --doctest            run doctest on myself
 
 Feedback
 --------
